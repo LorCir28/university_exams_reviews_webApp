@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/cssForm">
+        <link rel="stylesheet" type="text/css" href="/cssResponsive">
+        <title>Form Registrazione</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Utente non registrato. Registrati</h1>
+            <div class="title">Registrazione</div>
+            <form class="form" name="formRegistration" action="/validate-registration" method="POST">
+                <div class="user-details">
+                    <div class="inputBox">
+                        <span class="details">Nome</span>
+                        <label id="nameField">
+                            <input type="text" id="nome" name="name" placeholder="nome" onChange="nameControl()" required/>
+                        </label>
+                    </div>
+                    <div class="inputBox">
+                        <span class="details">Cognome</span>
+                        <label id="surnameField">
+                            <input type="text" id="cognome" name="surname" placeholder="cognome" onChange="surnameControl()" required/>
+                        </label>
+                    </div>
+                    <div class="inputBox">
+                        <span class="details">Email</span>
+                        <label id="emailField">
+                            <input type="email" id="email" name="email" placeholder="email" required/>
+                        </label>
+                    </div>
+                    <div class="inputBox">
+                        <span class="details">Matricola</span>
+                        <label id="matricolaField">
+                            <input type="text" id="matricola" name="matricola" placeholder="matricola" onchange="matricolaControl()" required/>
+                        </label>
+                    </div>
+                    <div class="inputBox">
+                        <span class="details">Password</span>
+                        <label id="passwordField">
+                            <input type="password" id="password" name="password" placeholder="password" required/>
+                        </label>
+                    </div>
+                    <div class="inputBox">
+                        <span class="details">Verifica Password</span>
+                        <label id="passwordVerifyField">
+                            <input type="password" id="passwordVerify" placeholder="verifica password" onChange="pwControl()" required/>
+                        </label>
+                    </div>
+                </div>
+                <div class="buttonX">
+                    <input type="submit" name="submit" value="Registrati" id="accedi-btn">
+                    <input type="reset" name="reset" value="Reimposta" id="reimposta-btn">
+                </div>
+            </form>
+            <div class="buttonEsc">
+                <a href="/">
+                    <button id="redreg-btn-home">Torna alla home</button>
+                </a>
+            </div>
+        </div>
+
+        <script>
+            //funzioni per assicurare una corretta password 
+            function pwCorrectionUpper(){
+                var pw = document.querySelector("#password").value;
+                var n = pw.length;
+                if(n<8){
+                    alert("la password deve essere composta da almeno 8 caratteri\ne deve contenere almeno un carattere maiuscolo ed un numero");
+                    document.querySelector("#password").value = "";
+                    return false;
+                }
+                for(i=0;i<n;i++){
+                    if(pw[i].match(/^[A-Z]$/)){
+                        return pwCorrectionNumber();
+                        break;
+                    }
+                }alert("la password deve essere composta da almeno 8 caratteri\ne deve contenere almeno un carattere maiuscolo ed un numero");
+                document.querySelector("#password").value = "";
+            }
+            function pwCorrectionNumber(){
+                var pw = document.querySelector("#password").value;
+                for(i=0;i<pw.length;i++){
+                    if(pw[i].match(/^[0-9]$/)){
+                        return true;
+                    }
+                }alert("la password deve essere composta da almeno 8 caratteri\ne deve contenere almeno un carattere maiuscolo ed un numero");
+                document.querySelector("#password").value = "";
+            }
+            //funzione per assicurare l'equivalenza delle 2 password
+            function pwControl(){
+                var pw = document.querySelector("#password").value;
+                var vpw= document.querySelector("#passwordVerify").value;
+                if(pw!=vpw){
+                    alert("le password non coincidono");
+                    document.querySelector("#password").value = "";
+                    document.querySelector("#passwordVerify").value = "";
+                }
+            }
+            //funzioni per assicurare un corretto nome,cognome e matricola
+            function nameControl() {
+                var n = document.querySelector("#nome").value;
+                if (!n.match(/^[a-zA-Z]+$/)) {
+                    alert("il nome non deve essere un numero");
+                    document.querySelector("#nome").value = "";
+                }
+            }
+
+            function surnameControl() {
+                var s = document.querySelector("#cognome").value;
+                if (!s.match(/^[a-zA-Z]+$/)) {
+                    alert("il cognome non deve essere un numero");
+                    document.querySelector("#cognome").value = "";
+                }
+            }
+
+            function matricolaControl() {
+                var mat = document.querySelector("#matricola").value;
+                if(mat.length!=7 || isNaN(mat)){
+                    alert("il numero di matricola deve essere un numero di 7 cifre");
+                    document.querySelector("#matricola").value = "";
+                }
+            }
+        </script>
+    </body>
+</html>
+

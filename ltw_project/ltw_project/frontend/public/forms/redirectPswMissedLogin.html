@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/cssForm">
+        <link rel="stylesheet" type="text/css" href="/cssResponsive">
+        <title>Form Login</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Password errata. Riprovare</h1>
+            <div class="title">Login</div>
+            <form class="form" name="formRegistration" action="/validate-login" method="POST">
+                <div class="user-details">
+                    <div class="inputBox">
+                        <span class="details">Email</span>
+                        <label id="emailField">
+                            <input type="email" id="email" name="email" placeholder="email" required/>
+                        </label>
+                    </div>
+                    <div class="inputBox">
+                        <span class="details">Password</span>
+                        <label id="passwordField">
+                            <input type="password" id="password" name="password" placeholder="password" required/>
+                        </label>
+                    </div>
+                </div>
+                <div class="buttonX">
+                    <input type="submit" name="submit" value="Accedi" id="accedi-btn">
+                    <input type="reset" name="reset" value="Reimposta" id="reimposta-btn">
+                </div>
+            </form>
+            <div class="buttonEsc">
+                <a href="/">
+                    <button id="regpwd-btn-home">Torna alla home</button>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

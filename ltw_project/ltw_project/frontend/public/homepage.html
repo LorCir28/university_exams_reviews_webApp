@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HOME PAGE</title>
+  <link rel="stylesheet" type="text/css" href="/css">
+  <link rel="stylesheet" type="text/css" href="/cssResponsive">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- link per usare jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+	<a name="home"></a>
+	<div class="hero">
+		<nav id="navbar">
+			<h2 class="logo">Sap<span>Review</span></h2>
+			<ul id="list">
+				<li><a href="#cosa_facciamo">Cosa facciamo</a></li>
+				<li><a href="#help">Aiuto</a></li>
+				<li><a href="#servizi">Servizi</a></li>
+			</ul>
+			<div id="logreg">
+				<!-- <a href="/login" class="btn">Accedi</a>
+			    &nbsp
+				<a href="/registration" class="btn">Registrati</a> -->
+				<a href="/login">
+					<button type="button" class="btn btn-success" id="log-btn">Accedi</button>
+				</a>
+				&nbsp
+				<a href="/registration">
+					<button type="button" class="btn btn-success" id="reg-btn">Registrati</button>
+				</a>
+			</div>
+		</nav>
+		<div class="content" id="div1">
+			<h1 id="tit-benv">Benvenuto a <span> <br> SapReview</span></h1>
+			<br>
+			<br>
+			<h4 id="tit">Vuoi scrivere una recensione?
+				<br>Accedi o registrati per visualizzare tutti gli esami!
+			</h4>
+			<br>
+			<br>
+		</div>
+
+		<div class="content-2" id="div1">
+			<img src="/img4" id="svg4">
+		</div>
+
+	</div>
+
+
+	<section class="about" id="section1">
+		<a name="cosa_facciamo"></a>
+		<div class="main">
+			<img src="/img1" id="img1">
+			<div class="about-text">
+				<h2 id="a1h2_1">Cosa facciamo</h2>
+				<h5>Aiuta <span>anche tu!</span></h5>
+				<p>Ti e' mai capitato di affrontare un esame difficile e hai qualche consiglio da dare? Hai il bisogno di fare una critica costruttiva? Vuoi avvisare dai compagni?</p>
+				<div class="trepulsanti">
+					<a href="/login">
+						<button type="button" class="btn btn-success btn_nothome">Accedi</button>
+					</a>
+					&nbsp
+					<a href="/registration">
+						<button type="button" class="btn btn-success btn_nothome">Registrati</button>
+					</a>
+					&nbsp
+					<a href="#home">
+						<button type="button" class="btn btn-success btn_nothome">Torna su</button>
+					</a>
+				</div>	
+			</div>
+		</div>
+	</section>
+
+	<section class="about2" id="section2">
+		<a name="help"></a>
+		<div class="main">
+			
+			<div class="about-text a2-div2">
+				<h2 id="a2h2">Hai bisogno di aiuto?</h2>
+				<h5>E' molto <span>semplice!</span></h5>
+				<p>Basta compilare un semplice form! E avrai accesso ad un intero database di informazioni!</p>
+				<div class="trepulsanti">
+					<a href="/login">
+						<button type="button" class="btn btn-success btn_nothome">Accedi</button>
+					</a>
+					&nbsp
+					<a href="/registration">
+						<button type="button" class="btn btn-success btn_nothome">Registrati</button>
+					</a>
+					&nbsp
+					<a href="#home">
+						<button type="button" class="btn btn-success btn_nothome">Torna su</button>
+					</a>
+				</div>
+			</div>
+			<img src="/img2" id="img2">
+		</div>
+	</section>
+
+	<section class="about" id="section3">
+		<div class="main">
+			<img id="img3" src="/img3">
+			<div class="about-text">
+				<h2 id="a1h2_2">Sei indeciso?</h2>
+				<h5>Cerca <span>informazioni!</span></h5>
+				<p>Se sei indeciso se scegliere un esame oppure no, corri a vedere le recensioni! Potresti trovare la soluzione!</p>
+				<div class="trepulsanti">
+					<a href="/login">
+						<button type="button" class="btn btn-success btn_nothome">Accedi</button>
+					</a>
+					&nbsp
+					<a href="/registration">
+						<button type="button" class="btn btn-success btn_nothome">Registrati</button>
+					</a>
+					&nbsp
+					<a href="#home">
+						<button type="button" class="btn btn-success btn_nothome">Torna su</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<div class="service" id="div4">
+		<a name="servizi"></a>
+		<!-- <div class="title"> -->
+			<h2 id="sh2">SCOPRICI</h2>
+		<!-- </div> -->
+
+		<div class="box">
+			<div class="card">
+				<i class="fas fa-bars"></i>
+				<h5 class="sh5">Aiutare</h5>
+				<div class="pra">
+					<p>Noi sappiamo che l'universita' non e' una passeggiata, per questo abbiamo ideato questa piattaforma!</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-user"></i>
+				<h5 class="sh5">Studiare</h5>
+				<div class="pra">
+					<p>Il confronto con i pensieri degli altri studenti ha anche lo scopo di migliorare la visione che abbiamo della materia!</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-bell"></i>
+				<h5 class="sh5">Scegliere</h5>
+				<div class="pra">
+					<p>Il nostro vasto database di esami permette allo studente di scegliere gli esami che gli sembrano piu' interessanti con assoluta certezza!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer id="footer">
+		<p>SapReview</p>
+		<p>La piattaforma per gli studenti dagli studenti</p>
+		<!-- <div class="social">
+			<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fab fa-instagram"></i></a>
+			<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fab fa-dribbble"></i></a>
+		</div> -->
+		<a href="#home">
+			<button type="button" class="btn btn-success">Torna su</button>
+		</a>
+		<!-- <p class="end">CopyRight By SapReview</p> -->
+	</footer>
+
+
+	<script>
+		// jquery
+		$(document).ready(function(){
+
+
+			$("#navbar").hide();
+			$("#navbar").fadeIn(1000);
+
+			$("#div1").hide();
+			$("#div1").slideDown(2000);
+
+			$("#section1").hide();
+			$("#section1").fadeIn(1000);
+
+			$("#section2").hide();
+			$("#section2").fadeIn(1000);
+
+			$("#section3").hide();
+			$("#section3").fadeIn(1000);
+
+			$("#div4").hide();
+			$("#div4").fadeIn(1000);
+
+			$("#footer").hide();
+			$("#footer").fadeIn(1000);
+
+		});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet"  href="/cssExams">
+    <link rel="stylesheet"  href="/cssResponsive">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- link per usare jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <title>Economia avanzata</title>
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                
+                <div class="text logo-text">
+                    <span class="name">Economia Avanzata</span>
+                    <span class="name2">SapReview</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="/exams">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">esami</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/analisiMatematica3">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">analisi matematica 3</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/bigDataEngineering">
+                            <i class='bx bx-pie-chart-alt-2 icon'></i>
+                            <span class="text nav-text">Big Data Engineering</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-link">
+                        <a href="/exams/chimica">
+                            <i class='bx bx-test-tube icon' ></i>
+                            <span class="text nav-text">Chimica</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/disegnoTecnico">
+                            <i class='bx bx-ruler icon' ></i>
+                            <span class="text nav-text">Disegno Tecnico</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/programmazioneC">
+                            <i class='bx bx-code-curly icon' ></i>
+                            <span class="text nav-text">Programmazione C</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/geometriaEuclidea">
+                            <i class='bx bx-shape-triangle icon' ></i>
+                            <span class="text nav-text">Geometria Euclidea</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/machineLearning">
+                            <i class='bx bx-microchip icon' ></i>
+                            <span class="text nav-text">Machine Learning</span>
+                        </a>
+                    </li>
+                    
+
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <section class="home">
+      <div class="box-area">
+        <div class="banner-areaEA">
+          <h2 id="exam">ECONOMIA <br> AVANZATA</h2>
+          <h3 id="doc">Docente: Cristiano Rosi</h3>
+          <h3 id="tut">Tutor: Andrea Silva</h3>
+          <a href="/exams/scrivi-recensione">
+            <button type="button" class="btn btn-success" id="but">Scrivi una recensione</button>
+          </a>
+        </div>
+        
+        <div class="content-area">
+          <div class="wrapper">
+            <h2 id="h2">RECENSIONI</h2>
+          </div>
+<br><h1>Recensione dell'utente 1234567:</h1><br><p>Il corso prevede anche un minimo di approfondimento del management relativo alle grandi quantità di dati, oltre allo studio di bilanci. L'esame consiste in dieci quesiti a risposta multipla e una prova orale.</p>
+<br><h1>Recensione dell'utente 2082837:</h1><br><p>Corso interessante, esame a crocette a cui segue a prescindere un orale. Si approfondisce l'analisi di bilancio</p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle");
+
+      toggle.addEventListener("click" , () =>{
+          sidebar.classList.toggle("close");
+      })
+
+      searchBtn.addEventListener("click" , () =>{
+          sidebar.classList.remove("close");
+      });
+    </script>
+
+    <script>
+
+        // jquery
+        $(document).ready(function(){
+
+            // jQuery methods go here...
+
+            $("#exam").hide();
+            $("#exam").fadeIn(1500);
+
+            $("#doc").hide();
+            $("#doc").fadeIn(1500);
+
+            $("#tut").hide();
+            $("#tut").fadeIn(1500);
+
+            $("#but").hide();
+            $("#but").fadeIn(1500);
+
+            $("#h2").hide();
+            $("#h2").slideDown(1000);
+
+        });
+
+    </script>
+
+</body>
+</html>

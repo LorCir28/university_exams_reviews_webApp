@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet"  href="/cssExams">
+    <link rel="stylesheet"  href="/cssResponsive">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- link per usare jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    
+    <title>Esami</title>
+</head>
+<body>
+
+
+
+
+    <nav class="sidebar close" id="navbar">
+        <header>
+            <div class="image-text">
+                
+                <div class="text logo-text">
+                    <span class="name">INDICE</span>
+                    <span class="name2">SapReview</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="/exams/machineLearning">
+                            <i class='bx bx-microchip icon' ></i>
+                            <span class="text nav-text">Machine Learning</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/analisiMatematica3">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">analisi matematica 3</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/bigDataEngineering">
+                            <i class='bx bx-pie-chart-alt-2 icon'></i>
+                            <span class="text nav-text">Big Data Engineering</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-link">
+                        <a href="/exams/chimica">
+                            <i class='bx bx-test-tube icon' ></i>
+                            <span class="text nav-text">Chimica</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/disegnoTecnico">
+                            <i class='bx bx-ruler icon' ></i>
+                            <span class="text nav-text">Disegno Tecnico</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/economiaAvanzata">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Economia avanzata</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/geometriaEuclidea">
+                            <i class='bx bx-shape-triangle icon' ></i>
+                            <span class="text nav-text">Geometria Euclidea</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/programmazioneC">
+                            <i class='bx bx-code-curly icon' ></i>
+                            <span class="text nav-text">Programmazione C</span>
+                        </a>
+                    </li>
+                    
+
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <section class="home" id="section1">
+      <div class="box-area">
+        <div class="banner-areaI">
+          <h2 id="lista">LISTA <br> ESAMI</h2>
+        </div>
+        <div class="content-area">
+          <div class="wrapper">
+            <h2 id="h2">SELEZIONA UN ESAME</h2>
+            <br>
+            <p>In questa pagina puoi analizzare tutte le recensioni scritte dai tuoi colleghi sugli esami del percorso formativo.
+                <br>Contribuisci anche tu scrivendo una recensione!
+                <br>Basta selezionare un esame dalla navbar a sinistra
+            </p>
+            Vuoi tornare alla pagina principale?
+            &nbsp
+            <a href="/welcome">
+                <button type="button" class="btn btn-success" id="exam-btn-home">Clicca qui</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <script>
+      const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle");
+
+      toggle.addEventListener("click" , () =>{
+          sidebar.classList.toggle("close");
+      })
+
+      searchBtn.addEventListener("click" , () =>{
+          sidebar.classList.remove("close");
+      });
+
+
+    </script>
+
+    <script>
+
+        // jquery
+        $(document).ready(function(){
+
+            // jQuery methods go here...
+
+            $("#lista").hide();
+            $("#lista").fadeIn(1000);
+
+            $("#h2").hide();
+            $("#h2").slideDown(1000);
+
+        });
+
+    </script>
+
+
+</body>
+</html>

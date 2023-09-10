@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet"  href="/cssExams">
+    <link rel="stylesheet"  href="/cssResponsive">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- link per usare jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <title>Geometria euclidea</title>
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                
+
+                <div class="text logo-text">
+                    <span class="name">Geometria Euclidea</span>
+                    <span class="name2">SapReview</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="/exams">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">esami</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/analisiMatematica3">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">analisi matematica 3</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/bigDataEngineering">
+                            <i class='bx bx-pie-chart-alt-2 icon'></i>
+                            <span class="text nav-text">Big Data Engineering</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-link">
+                        <a href="/exams/chimica">
+                            <i class='bx bx-test-tube icon' ></i>
+                            <span class="text nav-text">Chimica</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/disegnoTecnico">
+                            <i class='bx bx-ruler icon' ></i>
+                            <span class="text nav-text">Disegno Tecnico</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/economiaAvanzata">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Economia avanzata</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/machineLearning">
+                            <i class='bx bx-microchip icon' ></i>
+                            <span class="text nav-text">Machine Learning</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/programmazioneC">
+                            <i class='bx bx-code-curly icon' ></i>
+                            <span class="text nav-text">Programmazione C</span>
+                        </a>
+                    </li>
+                    
+
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <section class="home">
+      <div class="box-area">
+        <div class="banner-areaGE">
+          <h2 id="exam" style="color: white;">Geometria <br> Euclidea</h2>
+          <h3 id="doc" style="color: white;">Docente: Beatrice Verdi</h3>
+          <h3 id="tut" style="color: white;">Tutor: Francesco Sali</h3>
+          <a href="/exams/scrivi-recensione">
+            <button type="button" class="btn btn-success" id="but">Scrivi una recensione</button>
+          </a>
+        </div>
+        <div class="content-area">
+          <div class="wrapper">
+            <h2 id="h2">RECENSIONI</h2>
+          </div>
+<br><h1>Recensione dell'utente 1234567:</h1><br><p>Le spiegazioni sono molto chiare e comprensibili, con il tutor che svolge sempre molti esercizi, anche d'esame. Quest'ultimo prevede due esercizi belli corposi.</p>
+<br><h1>Recensione dell'utente 7282978:</h1><br><p>Esame per niente interessante e non in linea con il corso di laurea. Viene trattata la geometria in modo generale senza particolari approfondimenti. L'esame contempla solo una parte scritta senza possibilità di alzare il voto con un eventuale orale</p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle");
+
+      toggle.addEventListener("click" , () =>{
+          sidebar.classList.toggle("close");
+      })
+
+      searchBtn.addEventListener("click" , () =>{
+          sidebar.classList.remove("close");
+      });
+    </script>
+
+    <script>
+
+        // jquery
+        $(document).ready(function(){
+
+            // jQuery methods go here...
+
+            $("#exam").hide();
+            $("#exam").fadeIn(1500);
+
+            $("#doc").hide();
+            $("#doc").fadeIn(1500);
+
+            $("#tut").hide();
+            $("#tut").fadeIn(1500);
+
+            $("#but").hide();
+            $("#but").fadeIn(1500);
+
+            $("#h2").hide();
+            $("#h2").slideDown(1000);
+
+        });
+
+    </script>
+
+</body>
+</html>

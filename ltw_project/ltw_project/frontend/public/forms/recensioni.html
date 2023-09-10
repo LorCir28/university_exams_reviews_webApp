@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/cssForm">
+    <link rel="stylesheet" type="text/css" href="/cssResponsive">
+    <title>Form Recensioni</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+                <div class="title">Recensione</div>
+                <form action="/exams/scrivi-recensione" method="POST" id="form" enctype="multipart/form-data">
+                    <div class="user-details">
+                        <div class="inputBox">
+                            <span class="details">Esame</span>
+                            <select id="esame" name="exam" required>
+                                <option></option>
+                                <option value="programmazioneC">programmazione c</option>
+                                <option value="machineLearning">machine learning</option>
+                                <option value="geometriaEuclidea">geometria euclidea</option>
+                                <option value="economiaAvanzata">economia avanzata</option>
+                                <option value="disegnoTecnico">disegno tecnico</option>
+                                <option value="chimica">chimica</option>
+                                <option value="bigDataEngineering">big data engineering</option>
+                                <option value="analisiMatematica3">analisi matematica 3</option>
+                            </select>
+                        </div>
+                        <textarea cols="60" rows="12" placeholder="inserisci la tua recensione..." name="recensione" required></textarea>
+                    </div>
+                    <div class="buttonX">
+                        <input type="submit" value="spedisci" id="accedi-btn">      
+                        <input type="reset" value="reimposta" id="reimposta-btn">
+                    </div>
+                </form>
+                <div class="buttonEsc">
+                    <a href="/exams">
+                        <button id="regpwd-btn-home">Torna agli esami</button>
+                    </a>
+                </div>
+                
+                <script>
+                        function nameControl() {
+                            var n = document.querySelector("#nome").value;
+                            if (!n.match(/^[a-zA-Z]+$/)) {
+                                alert("il nome non deve essere un numero");
+                                document.querySelector("#nome").value = "";
+                            }
+                        }
+                
+                        function surnameControl() {
+                            var s = document.querySelector("#cognome").value;
+                            if (!s.match(/^[a-zA-Z]+$/)) {
+                                alert("il cognome non deve essere un numero");
+                                document.querySelector("#cognome").value = "";
+                            }
+                        }
+                
+                        function matricolaControl() {
+                            var mat = document.querySelector("#matricola").value;
+                            if(mat.length!=7 || isNaN(mat)){
+                                alert("il numero di matricola deve essere un numero di 7 cifre");
+                                document.querySelector("#matricola").value = "";
+                            }
+                        }
+                
+                </script>
+            </div>
+    </section>
+
+
+</body>
+</html>

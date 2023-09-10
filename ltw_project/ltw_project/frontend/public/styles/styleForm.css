@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    height: 120vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg,#10e06e,#000000);
+}
+
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.container .title{
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg,#10e06e,#000000)
+}
+
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+form .user-details .inputBox{
+    margin-bottom: 15px;
+    width: calc(100%/2 - 20px);
+}
+
+.user-details .inputBox .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .inputBox input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .inputBox select{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details textarea{
+    height: 230px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .inputBox input:focus,
+.user-details .inputBox input:valid{
+    border-color: #10e06e;
+}
+
+form .buttonX{
+    height: 45px;
+    margin: 50px 0;
+    
+}
+
+form .buttonX input{
+    height: 100%;
+    width: 30%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg,#10e06e,#09ff00);
+}
+
+form .buttonX .input:hover{
+    background: linear-gradient(-135deg,#10e06e,#000000);
+}
+
+
+.buttonEsc{
+    height: 45px;
+    margin: 50px 0;
+}
+
+
+.buttonEsc button{
+    height: 100%;
+    width: 30%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg,#151616,#000000);
+}
+
+.buttonEsc .button:hover{
+    background: linear-gradient(-135deg,#151616,#000000);
+}
+
+
+@media (max-width: 584px){
+    .container{
+        max-width: 700px;
+    }
+    form .user-details .inputBox{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .container form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar{
+        width: 0;
+    }
+}

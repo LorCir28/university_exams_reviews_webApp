@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet"  href="/cssExams">
+    <link rel="stylesheet"  href="/cssResponsive">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- link per usare jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <title>Machine learning</title>
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                
+                <div class="text logo-text">
+                    <span class="name">MACHINE LEARNING</span>
+                    <span class="name2">SapReview</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="/exams">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">esami</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/analisiMatematica3">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">analisi matematica 3</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/bigDataEngineering">
+                            <i class='bx bx-pie-chart-alt-2 icon'></i>
+                            <span class="text nav-text">Big Data Engineering</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-link">
+                        <a href="/exams/chimica">
+                            <i class='bx bx-test-tube icon' ></i>
+                            <span class="text nav-text">Chimica</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/disegnoTecnico">
+                            <i class='bx bx-ruler icon' ></i>
+                            <span class="text nav-text">Disegno Tecnico</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/economiaAvanzata">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Economia avanzata</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/geometriaEuclidea">
+                            <i class='bx bx-shape-triangle icon' ></i>
+                            <span class="text nav-text">Geometria Euclidea</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/programmazioneC">
+                            <i class='bx bx-code-curly icon' ></i>
+                            <span class="text nav-text">Programmazione C</span>
+                        </a>
+                    </li>
+                    
+
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <section class="home">
+      <div class="box-area">
+        <div class="banner-areaML">
+          <h2 id="exam" style="color: white">MACHINE LEARNING</h2>
+          <h3 id="doc" style="color:white">Docente: Paolo Giallo</h3>
+          <h3 id="tut" style="color:white">Tutor: Billy Bianchi</h3>
+          <a href="/exams/scrivi-recensione">
+            <button type="button" class="btn btn-success" id="but">Scrivi una recensione</button>
+          </a>
+        </div>
+
+        <div class="content-area">
+          <div class="wrapper">
+            <h2 id="h2">RECENSIONI</h2>
+          </div>
+<br><h1>Recensione dell'utente 1234567:</h1><br><p>esame molto difficile, ma il tutor e il professore sono molto disponibili per chiarimenti di ogni tipo</p>
+<br><h1>Recensione dell'utente 6642808:</h1><br><p>Corso non molto interessante, professore poco disponibile. Gli argomenti affrontati nel corso sono gli algoritmi alla base dell'intelligenza artificiale. L'esame si divide in una prima parte scritta a cui segue un esame orale previa sufficienza allo scritto</p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle");
+
+      toggle.addEventListener("click" , () =>{
+          sidebar.classList.toggle("close");
+      })
+
+      searchBtn.addEventListener("click" , () =>{
+          sidebar.classList.remove("close");
+      });
+    </script>
+
+    <script>
+
+        // jquery
+        $(document).ready(function(){
+
+            // jQuery methods go here...
+
+            $("#exam").hide();
+            $("#exam").fadeIn(1500);
+
+            $("#doc").hide();
+            $("#doc").fadeIn(1500);
+
+            $("#tut").hide();
+            $("#tut").fadeIn(1500);
+
+            $("#but").hide();
+            $("#but").fadeIn(1500);
+
+            $("#h2").hide();
+            $("#h2").slideDown(1000);
+
+        });
+
+    </script>
+
+</body>
+</html>

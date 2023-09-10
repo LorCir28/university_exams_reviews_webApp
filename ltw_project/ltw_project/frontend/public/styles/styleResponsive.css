@@ -1,0 +1,470 @@
+@media screen and (max-width: 380px) {
+    #accedi-btn  {
+        font-size: 10px !important;
+    }
+    #reimposta-btn  {
+        font-size: 10px !important;
+    }
+    #log-btn-home {
+        font-size: 10px !important;
+    }
+    #reg-btn-home {
+        font-size: 10px !important;
+    }
+    #redlog-btn-home {
+        font-size: 10px !important;
+    }
+    #redreg-btn-home {
+        font-size: 10px !important;
+    }
+    #regpwd-btn-home {
+        font-size: 10px !important;
+    }
+
+}
+
+/***************************************************************/
+
+@media screen and (max-width: 450px) {
+    #accedi-btn  {
+        font-size: 15px;
+    }
+    #reimposta-btn  {
+        font-size: 15px;
+    }
+
+    .content-area {
+        min-width: 450px;
+    }
+
+}
+
+/*********************************************************************/
+
+@media screen and (max-width: 530px) {
+    #tit {
+        font-size: 15px;
+        margin-top: 200px;
+        width: 350px;
+    }
+
+    #div1 {
+        width: 60px;
+    }
+
+    #tit-benv {
+        font-size: 10px !important;
+    }
+
+    #log-btn {
+        margin-bottom: 100px !important;
+    }
+
+
+
+
+}
+
+/********************************************************************/
+
+@media screen and (max-width: 576px){
+    body {
+        overflow-x: hidden;
+    }
+    .hero{
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        -moz-background-size: cover;
+        display: block;
+    }
+    .trepulsanti{
+        padding: 10px;
+    }
+    #list {
+        padding: 20px;
+    }
+    #navbar {
+        display: block;
+    }
+    #logreg {
+        padding: 10%;
+    }
+
+    #tit {
+        font-size: 15px;
+        padding-top: 70px;
+        width: 350px;
+    }
+
+    .about {
+        background-size: 100% 100%;
+        display: block;
+     }
+    #img1 {
+        max-width: 150px;
+    }
+    #img3 {
+        max-width: 150px;
+    }
+    
+    #a1h2_1 {
+        font-size: 20px;
+    }
+    #a1h2_2 {
+        font-size: 20px;
+    }
+
+    .about2 {
+        max-width: 760px;
+        background-size: 100% 100%;
+    }
+    #img2 {
+        max-width: 150px;
+    }
+    #a2h2 {
+        font-size: 20px;
+    }
+
+    .service {
+        max-width: 760px;
+        background-size: 100% 100%;
+    }
+
+    .footer {
+        max-width: 760px;
+        background-size: 100% 100%;
+    }
+
+    #tit-benv {
+        font-size: 40px !important;
+    }
+
+
+
+    
+
+
+}
+
+/********************************************************************/
+
+@media screen and (max-width: 600px) {  
+    #heroman {
+        /* max-height: 10px !important; */
+        background-size: 100% 100% !important;
+        display: block !important;
+    }
+}
+
+/*********************************************************************/
+
+@media screen and (max-width: 660px){ 
+    #svg4{
+        width: 150px !important;
+        margin-top: 100px;
+    }
+} 
+
+/*********************************************************************/
+
+@media screen and (max-width: 680px) {  
+
+    #log-btn-home {
+        font-size: 15px;
+    }
+    #reg-btn-home {
+        font-size: 15px;
+    }
+    #redlog-btn-home {
+        font-size: 15px;
+    }
+    #regpwd-btn-home {
+        font-size: 15px;
+    }
+    #redreg-btn-home {
+        font-size: 15px;
+    }
+
+    #exam {
+        font-size: 30px !important;
+        font-family: poppins;
+    }
+
+    #tut {
+        font-size: 23px;
+    }
+
+    #doc {
+        font-size: 23px;
+    }
+
+    #but {
+        margin-top: 40px;
+    }
+    
+}
+
+/*************************************************************************/
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .hero{
+        background-size: 100% 100%;
+        display: block;
+    }
+    .logo {
+        text-align: left;
+    }
+    .trepulsanti{
+        padding: 10px;
+    }
+    #list {
+        padding: 20px;
+        text-align: left;
+    }
+    #logreg {
+        padding: 10%;
+    }
+    #tit {
+        font-size: 15px;
+        padding-top: 70px;
+        width: 350px;
+    }
+
+    .about {
+        background-size: 100% 100%;
+        display: block;
+     }
+     .btn_nothome {
+         margin: 10px;
+     }
+    #img1 {
+        max-width: 300px;
+    }
+    #img3 {
+        max-width: 300px;
+    }
+    
+    #a1h2_1 {
+        font-size: 30px;
+    }
+    #a1h2_2 {
+        font-size: 30px;
+    }
+
+    .about2 {
+        max-width: 760px;
+        background-size: 100% 100%;
+    }
+    #img2 {
+        max-width: 300px;
+    }
+    #a2h2 {
+        font-size: 30px;
+    }
+
+    .service {
+        max-width: 760px;
+        background-size: 100% 100%;
+    }
+
+    #sh2 {
+        font-size: 30px;
+        text-align: center; 
+    }
+
+    .sh5 {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .footer {
+        max-width: 760px;
+        background-size: 100% 100%;
+    }
+
+    #exam {
+        font-size: 40px;
+        font-family: poppins;
+    }
+
+    #but {
+        margin-top: 40px;
+    }
+
+    #svg4{
+        width: 200px;
+        margin-top: 100px;
+    }
+
+}
+
+/******************************************************************************/
+
+@media screen and (max-width: 805px) {
+    .card {
+        height: 700px;
+    }
+}
+
+/********************************************************************************/
+
+@media screen and (max-width: 709px){
+    #exam-btn-home {
+        margin-top: 20px;
+    }
+}
+
+/********************************************************************************/
+
+@media screen and (max-width: 900px){
+    .content-2 img{
+        width: 200px !important;
+        margin-top: 100px;
+    }
+}
+
+/********************************************************************************/
+
+@media screen and (max-width: 1200px){
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .hero{
+        background-size: 100% 100%;
+        display: block;
+    }
+
+    #div1 {
+        margin-top: 70px;
+    }
+
+    .logo {
+        text-align: left;
+    }
+
+    .trepulsanti{
+        padding: 10px;
+    }
+
+    #list {
+        padding: 20px;
+        text-align: left;
+    }
+
+    #logreg {
+        padding: 10%;
+    }
+
+    #tit {
+        font-size: 15px;
+        padding-top: 70px;
+        width: 350px;
+    }
+
+    .about {
+        background-size: 100% 100%;
+        display: block;
+    }
+
+    .btn_nothome {
+        margin: 10px;
+    }
+
+    #img1 {
+        max-width: 300px;
+    }
+
+    #img3 {
+        max-width: 300px;
+    }
+    
+    #a1h2_1 {
+        font-size: 30px;
+    }
+
+    #a1h2_2 {
+        font-size: 30px;
+    }
+
+    .about2 {
+        background-size: 100% 100%;
+    }
+
+    #img2 {
+        max-width: 300px;
+    }
+
+    #a2h2 {
+        font-size: 30px;
+    }
+
+    .service {
+        background-size: 100% 100%;
+    }
+
+    #sh2 {
+        font-size: 30px;
+        text-align: center; 
+    }
+
+    .footer {
+        max-width: 760px;
+        background-size: 100% 100%;
+    }
+
+    #exam {
+        font-size: 50px;
+    }
+
+    #tut {
+        font-size: 23px;
+    }
+
+    #doc {
+        font-size: 23px;
+    }
+
+    #but {
+        margin-top: 40px;
+    }
+
+    #tit-benv {
+        font-size: 50px;
+    }
+
+    #log-btn {
+        margin-bottom: 20px;
+    }
+
+    .content-2 img{
+        width: 300px;
+        margin-top: 100px;
+    }
+}
+
+/********************************************************************************/
+
+@media screen and (max-height: 560px){
+
+    .body {
+        min-height: 560px;
+    }
+
+    #tit-benv {
+        font-size: 30px;
+        padding-top: 100px;
+    }
+
+    #svg4{
+        /* height: auto; */
+        width: 200px !important;
+        padding-top: 100px;
+    }
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet"  href="/cssExams">
+    <link rel="stylesheet"  href="/cssResponsive">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- link per usare jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <title>Analisi matematica 3</title>
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <div class="text logo-text">
+                    <span class="name">ANALISI MATEMATICA 3</span>
+                    <span class="name2">SapReview</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="/exams">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">esami</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/bigDataEngineering">
+                            <i class='bx bx-pie-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">Big Data Engineering</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/chimica">
+                            <i class='bx bx-test-tube icon'></i>
+                            <span class="text nav-text">Chimica</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-link">
+                        <a href="/exams/disegnoTecnico">
+                            <i class='bx bx-ruler icon' ></i>
+                            <span class="text nav-text">Disegno Tecnico</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/economiaAvanzata">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Economia Avanzata</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/programmazioneC">
+                            <i class='bx bx-code-curly icon' ></i>
+                            <span class="text nav-text">Programmazione C</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/geometriaEuclidea">
+                            <i class='bx bx-shape-triangle icon' ></i>
+                            <span class="text nav-text">Geometria Euclidea</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/exams/machineLearning">
+                            <i class='bx bx-microchip icon' ></i>
+                            <span class="text nav-text">Machine Learning</span>
+                        </a>
+                    </li>
+                    
+
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <section class="home">
+      <div class="box-area">
+        <div class="banner-areaA3" id="a3">
+          <h2 id="exam">ANALISI <br> MATEMATICA 3</h2>
+          <h3 id="doc">Docente: Tatiana Verde</h3>
+          <h3 id="tut">Tutor: Gianpaolo Corsi</h3>
+          <a href="/exams/scrivi-recensione">
+            <button type="button" class="btn btn-success" id="but">Scrivi una recensione</button>
+          </a>
+        </div>
+
+        
+        <div class="content-area">
+          <div class="wrapper">
+            <h2 id="h2">RECENSIONI</h2>
+          </div>
+<br><h1>Recensione dell'utente 1234567:</h1><br><p>il docente non risulta molto reperibile per problemi e dubbi e l'esame è molto complicato tra teoria e pratica.</p>
+<br><h1>Recensione dell'utente 4095475:</h1><br><p>Si tratta lo studio di funzioni a variabile complessa e a più variabili. La modalità di esame cambia di anno in anno. Quando è toccato a me era a crocette</p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle");
+
+      toggle.addEventListener("click" , () =>{
+          sidebar.classList.toggle("close");
+      })
+
+      searchBtn.addEventListener("click" , () =>{
+          sidebar.classList.remove("close");
+      });
+    </script>
+
+    <script>
+
+        // jquery
+        $(document).ready(function(){
+
+            // jQuery methods go here...
+
+            $("#exam").hide();
+            $("#exam").fadeIn(1500);
+
+            $("#doc").hide();
+            $("#doc").fadeIn(1500);
+
+            $("#tut").hide();
+            $("#tut").fadeIn(1500);
+
+            $("#but").hide();
+            $("#but").fadeIn(1500);
+
+            $("#h2").hide();
+            $("#h2").slideDown(1000);
+
+        });
+
+    </script>
+
+</body>
+</html>
